@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Ping Pong Bong</title>
+</head>
+
+<body>
+  <div class="column is-one-third is-offset-one-third">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="https://cdn.pixabay.com/photo/2016/05/31/23/21/table-tennis-1428052_1280.jpg"
+            alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="content">
+          <h1 class="title is-1"><span id="score1">0</span> to <span id="score2">0</span></h1>
+          <p><time datetime="2023-1-1">13 Mar 2016 Front-end Exercise@Claudia Wang</time></p>
+          <label for="playingTo">Playing to</label>
+          <select name="playingTo" id="playingTo">
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="6">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+      </div>
+      <footer class="card-footer">
+        <button id="player1" class="button is-primary card-footer-item">+1 player1</button>
+        <button id="player2" class="button is-danger card-footer-item">+1 player2</button>
+        <button id="reset" class="button is-info card-footer-item">reset</button>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
